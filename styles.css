@@ -109,6 +109,12 @@ button { font: inherit; }
 .filter-button { padding: 8px 12px; border: 0; border-radius: 3px; background: transparent; color: #72766d; cursor: pointer; font-size: 10px; font-weight: 600; transition: color .18s ease, background .18s ease; }
 .filter-button:hover { color: var(--ink); }
 .filter-button.is-active { color: var(--ink); background: #e7e9df; }
+.quality-strip { display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 8px 20px; margin: 0 0 24px; padding: 14px 16px; border: 1px solid #e2e4da; border-radius: 4px; background: #eff0e9; }
+.quality-strip > p { margin: 0; color: #6d7368; font-size: 8px; font-weight: 700; letter-spacing: .1em; }
+.quality-strip > div { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px 17px; }
+.quality-strip > div span { color: #424a3f; font-size: 9px; font-weight: 600; }
+.quality-strip i { margin-right: 4px; color: #6f963e; font-size: 10px; font-style: normal; }
+.quality-strip small { grid-column: 2; justify-self: end; color: #858a80; font-size: 9px; }
 .project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 24px; }
 .project-card { min-width: 0; }
 .project-link { display: block; }
@@ -268,6 +274,10 @@ button { font: inherit; }
   .work-toolbar { align-items: start; flex-direction: column; gap: 10px; margin-top: 25px; padding: 12px 0; }
   .filters { width: 100%; gap: 0; }
   .filter-button { padding: 8px 9px; font-size: 9px; }
+  .quality-strip { grid-template-columns: 1fr; gap: 10px; padding: 13px; }
+  .quality-strip > div { justify-content: flex-start; gap: 8px 12px; }
+  .quality-strip > div span { font-size: 8px; }
+  .quality-strip small { grid-column: 1; justify-self: start; line-height: 1.5; }
   .project-grid { grid-template-columns: 1fr; gap: 25px; }
   .project-preview { height: clamp(205px, 63vw, 285px); }
   .preview-body { margin-top: clamp(29px, 10vw, 51px); }

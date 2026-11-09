@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f5f5f0" />
+    <meta
+      name="description"
+      content="Thoughtful websites, AI solutions, and automations for ambitious businesses. Explore live projects by Tarun Teja."
+    />
+    <title>Tarun Teja — Websites, AI & Automation</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="#home" aria-label="Tarun Teja home">
+        <span class="wordmark-icon">t<span>.</span></span>
+        <span>tarun teja<span class="wordmark-period">.</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" id="primary-nav" aria-label="Main navigation">
+        <a href="#work">Work</a>
+        <a href="#services">What I do</a>
+        <a href="#about">About</a>
+        <a class="nav-cta" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section-shell" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> INDEPENDENT DIGITAL STUDIO</p>
+          <h1>Good ideas.<br />Built to <span>work.</span></h1>
+          <p class="hero-intro">
+            I create thoughtful websites, useful AI tools, and smart automations that help
+            businesses move forward.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#work">Explore the work <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="#contact">Have a project in mind? <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-proof">
+            <span class="proof-avatars" aria-hidden="true"><i>W</i><i>A</i><i>+</i></span>
+            <span>Websites, products &amp; digital experiences<br /><strong>11 live projects to explore</strong></span>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-label="Illustration of connected digital systems">
+          <div class="art-orbit orbit-one"></div>
+          <div class="art-orbit orbit-two"></div>
+          <div class="art-label"><span class="status-dot"></span> IDEAS INTO SYSTEMS</div>
+          <div class="flow-card flow-card-main">
+            <div class="flow-card-head">
+              <span class="flow-icon">✳</span>
+              <span>WORKFLOW OVERVIEW</span>
+              <span class="flow-menu">•••</span>
+            </div>
+            <div class="flow-title">A little less busywork.</div>
+            <div class="flow-subtitle">A smarter way to get things done.</div>
+            <div class="flow-steps">
+              <div class="flow-step"><span class="step-icon step-in">↗</span><span><b>New enquiry</b><small>Website form</small></span><span class="step-check">✓</span></div>
+              <div class="flow-connector"></div>
+              <div class="flow-step"><span class="step-icon step-ai">✳</span><span><b>AI assistant</b><small>Qualifies &amp; routes</small></span><span class="step-check">✓</span></div>
+              <div class="flow-connector"></div>
+              <div class="flow-step"><span class="step-icon step-out">↗</span><span><b>Follow-up sent</b><small>Right on time</small></span><span class="step-check">✓</span></div>
+            </div>
+            <div class="flow-card-foot"><span><span class="status-dot"></span> All systems connected</span><span>Just now</span></div>
+          </div>
+          <div class="floating-note note-top"><span class="note-spark">✳</span><span><b>AI, with a purpose</b><small>Useful, not just hype.</small></span></div>
+          <div class="floating-note note-bottom"><span class="note-arrow">↗</span><span><b>Made for your business</b><small>Custom by design.</small></span></div>
+          <div class="art-stamp" aria-hidden="true">THOUGHTFUL<br />BY DESIGN</div>
+        </div>
+        <a class="scroll-cue" href="#work"><span></span> SCROLL TO EXPLORE</a>
+      </section>
+
+      <section class="work-section section-shell" id="work">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">A FEW THINGS OUT IN THE WORLD</p>
+            <h2>Selected <span>work</span></h2>
+          </div>
+          <p class="section-note">Real projects, live on the web.<br />Take a look around.</p>
+        </div>
+
+        <div class="work-toolbar">
+          <div class="project-count"><span class="count-dot"></span><span id="project-count">11</span> live projects</div>
+          <div class="filters" role="group" aria-label="Filter projects">
+            <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All work</button>
+            <button class="filter-button" type="button" data-filter="client" aria-pressed="false">Client websites</button>
+            <button class="filter-button" type="button" data-filter="github" aria-pressed="false">GitHub Pages</button>
+          </div>
+        </div>
+        <div class="project-grid" id="project-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="services-section" id="services">
+        <div class="section-shell services-inner">
+          <div class="services-heading">
+            <p class="eyebrow"><span class="status-dot"></span> WHAT I CAN HELP WITH</p>
+            <h2>Less busywork.<br /><span>More possibility.</span></h2>
+            <p>Practical digital solutions, shaped around the way your business actually works.</p>
+            <a class="button button-light" href="#contact">Let’s make it happen <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="service-list">
+            <article class="service-item">
+              <span class="service-number">01</span>
+              <div><h3>Websites &amp; digital products</h3><p>Fast, responsive experiences that make your business easier to discover, understand, and choose.</p></div>
+              <span class="service-arrow" aria-hidden="true">↗</span>
+            </article>
+            <article class="service-item">
+              <span class="service-number">02</span>
+              <div><h3>AI that solves real problems</h3><p>Helpful AI assistants and custom tools that turn repetitive work into something simpler.</p></div>
+              <span class="service-arrow" aria-hidden="true">↗</span>
+            </article>
+            <article class="service-item">
+              <span class="service-number">03</span>
+              <div><h3>Automation &amp; integrations</h3><p>Connect the tools you already use and keep everyday workflows moving smoothly.</p></div>
+              <span class="service-arrow" aria-hidden="true">↗</span>
+            </article>
+            <article class="service-item">
+              <span class="service-number">04</span>
+              <div><h3>Customizations &amp; ongoing support</h3><p>Make existing software fit your process, with careful improvements as you grow.</p></div>
+              <span class="service-arrow" aria-hidden="true">↗</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section section-shell" id="about">
+        <div class="about-mark" aria-hidden="true"><span>t.</span><i>✳</i></div>
+        <div class="about-copy">
+          <p class="eyebrow">A PRACTICAL, PEOPLE-FIRST APPROACH</p>
+          <h2>Technology should<br />make work <span>feel easier.</span></h2>
+          <p>I’m Tarun Teja. I bring ideas to life with a mix of good design and thoughtful engineering—from a first website to a custom AI-powered workflow.</p>
+          <p>No one-size-fits-all packages. Just clear conversations, practical solutions, and work built around your goals.</p>
+        </div>
+        <div class="about-aside">
+          <span class="aside-line"></span>
+          <p>01 / START WITH THE PROBLEM</p>
+          <p>02 / BUILD WHAT FITS</p>
+          <p>03 / MAKE IT WORK FOR YOU</p>
+          <span class="aside-foot">THOUGHTFUL WORK.<br />REAL-WORLD RESULTS.</span>
+        </div>
+      </section>
+
+      <section class="contact-section section-shell" id="contact">
+        <div class="contact-card">
+          <div class="contact-orb" aria-hidden="true"></div>
+          <p class="eyebrow"><span class="status-dot"></span> HAVE A GOOD ONE IN MIND?</p>
+          <h2>Let’s build<br />something <span>useful.</span></h2>
+          <p>Tell me what you’re working on. We’ll figure out the right next step together.</p>
+          <a class="button button-dark" href="mailto:jvktechno@gmail.com?subject=Let%27s%20build%20something%20useful">Start a conversation <span aria-hidden="true">↗</span></a>
+          <span class="contact-aside" aria-hidden="true">OPEN TO<br />GOOD IDEAS</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-shell">
+      <a class="wordmark footer-wordmark" href="#home"><span class="wordmark-icon">t<span>.</span></span><span>tarun teja<span class="wordmark-period">.</span></span></a>
+      <p>Made with intention. © <span id="year"></span> Tarun Teja.</p>
+      <a class="footer-link" href="https://github.com/tarunteja87" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+    </footer>
+  </body>
+</html>
